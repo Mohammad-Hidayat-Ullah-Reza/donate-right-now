@@ -1,8 +1,37 @@
 /* google fonts inter, poppins, roboto, lobster, manrope */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-*,*::after,*::before{
+*,*::before,*::after{
     box-sizing: border-box;
+}
+.body{
     margin: 0;
     padding: 0;
+}
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+}
+.center{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.flex-text-left{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+footer{
+    text-align: center;
 }
