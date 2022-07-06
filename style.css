@@ -35,6 +35,11 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    /* width: 360px;
+    height: 352px; */
+}
+.flex-text-left+.flex-text-left{
+    margin-left: 24px;
 }
 #section1{
     background-image: url(images/donation8.jpg);
@@ -140,9 +145,48 @@ button{
     line-height: 28px;
     text-align: center;
     color: #B3B3B3;
+}
+#third-section{
+    padding:0;
+}
+#our-donate-plan{
+    margin: 0 250px;
+}
+#card-container{
+    padding: 50px 155px 0px 157px;
+    
+}
+#first-card{
+    background: rgba(79, 157, 166, 0.1);
+    border-radius: 5px;
+    padding: 63.5px 22px 54px 23px;
+}
+#second-card{
+    background: rgba(255, 89, 89, 0.1);
+    border-radius: 5px;
+    padding: 63.5px 22px 54px 23px;
 
 }
+#third-card{
+    background: #FFF4D6;
+    border-radius: 5px;
+    padding: 63.5px 22px 54px 23px;
 
+}
+h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #121212;
+}
+h3~p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
 footer{
     text-align: center;
 }
