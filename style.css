@@ -215,4 +215,27 @@ h3~p{
 }
 footer{
     text-align: center;
+    background: #0B0D17;
+    padding-top: 43px;
+    padding-bottom: 42px;
+}
+h5{
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    color: #FF5959;
+    margin: 0;
+}
+#footer-para{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #D9DBE1;
+    margin: 0;
+    margin-top: 24px;
 }
