@@ -11,7 +11,11 @@ body{
 .container{
     width: 100%;
     margin: 0;
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right:250px;
+    padding-left:250px;
 }
 .flex-column{
     display: flex;
@@ -37,11 +41,6 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     min-height: 669px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right:250px;
-    padding-left:250px;
 }
 h1{
     font-family: 'Inter';
@@ -51,6 +50,7 @@ h1{
     line-height: 79px;
     text-align: center;
     color: #FFFFFF;
+    margin: 0;
 }
 p{
     font-family: 'Poppins';
@@ -61,10 +61,23 @@ p{
     text-align: center;
     color: #707070;
 }
+.paragraph-width-70{
+    width: 70%;
+}
+h2{
+    margin-top: 130px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    color: #121212;
+}
 .white{
     color: #FFFFFF;
 }
-a{
+.donate-now{
     text-decoration: none;
     background: #FF5959;
     border-radius: 5px;
@@ -76,6 +89,60 @@ a{
     line-height: 24px;
     color: #FFFFFF;
 }
+.money{
+    background: #FAFAFA;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #707070;
+    margin-bottom: 0;
+}
+.money+.money{
+    margin-left: 22px;
+}
+#money-padding1{
+    padding: 43px 25px 44px 24px;
+}
+#money-padding2{
+    padding: 43px 23px 44px 23px;
+}
+#money-padding3{
+    padding: 43px 22px 44px 22px;
+}
+#money-padding4{
+    padding: 43px 14px 44px 15px;
+}
+#money-padding5{
+    padding: 43px 12px 44px 12px;
+}
+button{
+    border: none;
+}
+#second-button{
+    margin-top: 30px;
+}
+#amount{
+    width: 765px;
+    border: none;
+    border-bottom: 1px solid #DADADA;
+    text-align: center;
+    margin-top: 60px;
+}
+#amount::placeholder{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #B3B3B3;
+
+}
+
 footer{
     text-align: center;
 }
