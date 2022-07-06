@@ -29,18 +29,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-.flex-text-left{
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    /* width: 360px;
-    height: 352px; */
-}
-.flex-text-left+.flex-text-left{
-    margin-left: 24px;
-}
 #section1{
     background-image: url(images/donation8.jpg);
     background-color: rgba(0, 0, 0, .4);
@@ -68,8 +56,9 @@ p{
     text-align: center;
     color: #707070;
 }
-.paragraph-width-70{
+.fist-section-para{
     width: 70%;
+    color: #FFFFFF;
 }
 h2{
     margin-top: 130px;
@@ -80,9 +69,6 @@ h2{
     line-height: 54px;
     text-align: center;
     color: #121212;
-}
-.white{
-    color: #FFFFFF;
 }
 .donate-now{
     text-decoration: none;
@@ -107,30 +93,13 @@ h2{
     text-align: center;
     color: #707070;
     margin-bottom: 0;
+    padding: 44px 24px;
 }
 .money+.money{
     margin-left: 22px;
 }
-#money-padding1{
-    padding: 43px 25px 44px 24px;
-}
-#money-padding2{
-    padding: 43px 23px 44px 23px;
-}
-#money-padding3{
-    padding: 43px 22px 44px 22px;
-}
-#money-padding4{
-    padding: 43px 14px 44px 15px;
-}
-#money-padding5{
-    padding: 43px 12px 44px 12px;
-}
 button{
     border: none;
-}
-#second-button{
-    margin-top: 30px;
 }
 #amount{
     width: 765px;
@@ -138,6 +107,7 @@ button{
     border-bottom: 1px solid #DADADA;
     text-align: center;
     margin-top: 60px;
+    margin-bottom: 30px;
 }
 #amount::placeholder{
     font-family: 'Poppins';
@@ -156,64 +126,29 @@ button{
 }
 #card-container{
     padding: 50px 155px 0px 157px;
-    
+}
+.flex-text-left{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.flex-text-left+.flex-text-left{
+    margin-left: 24px;
+}
+#first-card, #second-card, #third-card{
+    border-radius: 5px;
+    padding: 63.5px 22px 54px 23px;
 }
 #first-card{
     background: rgba(79, 157, 166, 0.1);
-    border-radius: 5px;
-    padding: 63.5px 22px 54px 23px;
 }
 #second-card{
     background: rgba(255, 89, 89, 0.1);
-    border-radius: 5px;
-    padding: 63.5px 22px 54px 23px;
-
 }
 #third-card{
     background: #FFF4D6;
-    border-radius: 5px;
-    padding: 63.5px 22px 54px 23px;
-
-}
-h3{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    color: #121212;
-}
-h3~p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-}
-#form-div{
-    background: #FFF4D6;
-    padding: 76px 188px 76px 189px;
-}
-#email{
-    background: #D9D9D9;
-    border-radius: 5px 0px 0px 5px;
-    /* height: 48px; */
-    padding: 0;
-    border: none;
-}
-#email:placeholder-shown{
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 17px;
-}
-#subscribe{
-    padding: 14px 43px 14px 42px;
-    color: #FFFFFF;
-    background: #FF5959;
-    border-radius: 0px 5px 5px 0px;
-}
-#last-sec-para{
-    margin-bottom: 50px;
-    padding: 0 70px;
 }
 #fourth-section{
     padding-left:157px;
@@ -236,9 +171,7 @@ h3~p{
     border-radius: 5px 5px 0 0;
 }
 .recruitment-details{
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-left: 30px;
+    padding: 0px 30px 10px 30px;
 }
 .become{
     text-decoration: none;
@@ -252,6 +185,56 @@ h3~p{
 .become:hover,.become:focus{
     opacity: .5;
 }
+h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #121212;
+}
+h3~p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
+.icons{
+    width: 70%;
+}
+.achievement-para{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0B0D17;
+    margin-top: 0;
+}
+#form-div{
+    background: #FFF4D6;
+    padding: 76px 188px 76px 189px;
+}
+#email{
+    background: #D9D9D9;
+    border-radius: 5px 0px 0px 5px;
+    padding: 0;
+    border: none;
+}
+#email:placeholder-shown{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 17px;
+}
+#subscribe{
+    margin-left: -4px;
+    padding: 14px 43px 14px 42px;
+    color: #FFFFFF;
+    background: #FF5959;
+    border-radius: 0px 5px 5px 0px;
+}
+#last-sec-para{
+    margin-bottom: 50px;
+    padding: 0 70px;
+}
+
 footer{
     text-align: center;
     background: #0B0D17;
