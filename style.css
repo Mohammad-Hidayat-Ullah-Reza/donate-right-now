@@ -98,6 +98,11 @@ h2{
 .money+.money{
     margin-left: 22px;
 }
+#default-money{
+    background: #FFEEEE;
+    border: 2px solid #FF5959;
+    color: #FF5959;
+}
 button{
     border: none;
 }
